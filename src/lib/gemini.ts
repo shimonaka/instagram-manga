@@ -30,7 +30,7 @@ export async function generateStory(apiKey: string, prompt: string): Promise<Sto
                 config: {
                     // @ts-ignore - thinkingConfig might not be fully typed in the SDK yet or requires specific version
                     thinkingConfig: {
-                        thinkingLevel: "low",
+                        thinkingLevel: "low" as any,
                     },
                     responseMimeType: "application/json",
                 }
@@ -76,7 +76,8 @@ export async function generateImage(apiKey: string, prompt: string, referenceIma
             }
 
             const response = await chat.sendMessage({
-                message: { role: 'user', parts }
+                // @ts-ignore - SDK type definition mismatch for message parts
+                message: parts
             });
 
             // Find the image part in the response

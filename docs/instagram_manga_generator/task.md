@@ -1,0 +1,24 @@
+# Tasks
+
+- [x] Design Analysis & Setup
+    - [x] Analyze design document
+    - [x] Initialize Vite + React project
+    - [x] Setup Global CSS & Variables (Colors, Fonts)
+- [x] Core Logic Implementation
+    - [x] Create Gemini API client (Text & Image)
+    - [x] Implement Prompt Generator (Consistency & Text)
+    - [x] Update Gemini Client to v3.0 (Preview)
+    - [x] Implement Retry Logic for 503 Errors
+    - [x] Implement Sequential Image Generation for Consistency
+- [x] UI Implementation
+    - [x] Build Input Form (Tags, File Upload)
+    - [x] Build Story Preview & Image Grid
+    - [x] Integrate API with UI (Streaming/Loading states)
+    - [x] Localize UI to Japanese
+- [x] Feature Additions
+    - [x] Implement Single Image Download
+    - [x] Implement Batch Download (Zip)
+- [ ] Refinement & Verification
+    - [x] Verify Character Consistency
+    - [x] Verify Text-in-Image Rendering
+    - [x] Polish UI (Animations, Glassmorphism)

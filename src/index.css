@@ -1,0 +1,68 @@
+:root {
+  /* Colors */
+  --color-bg-start: #FEF7F9;
+  --color-bg-mid: #FCE4EC;
+  --color-bg-end: #F3E5F5;
+  --color-text-primary: #7C3050;
+  --color-text-secondary: #B08090;
+  --color-accent: #D4829C;
+  --color-border: rgba(212, 130, 156, 0.15);
+  
+  --color-button-start: #D4829C;
+  --color-button-end: #B06EA8;
+  
+  --color-error: #C0392B;
+  
+  /* Glassmorphism */
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.5);
+  --glass-blur: 20px;
+
+  /* Fonts */
+  --font-base: 'Noto Sans JP', sans-serif;
+  --font-heading: 'Noto Serif JP', serif;
+  --font-mono: Consolas, monospace;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, var(--color-bg-start) 0%, var(--color-bg-mid) 50%, var(--color-bg-end) 100%);
+  color: var(--color-text-primary);
+  font-family: var(--font-base);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  margin: 0;
+  font-weight: 700;
+}
+
+button {
+  font-family: var(--font-base);
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Utilities */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--color-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(212, 130, 156, 0.1);
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, var(--color-text-primary), var(--color-button-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

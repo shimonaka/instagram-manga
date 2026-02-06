@@ -1,0 +1,4 @@
+/* App-specific styles are handled in index.css and CSS modules */
+.app-container {
+  min-height: 100vh;
+}
